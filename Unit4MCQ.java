@@ -10,11 +10,14 @@ public class Unit4MCQ
         }
         return result;
     }
+    
     //A. ccocom
     //B. comcoc
     //C. ccocomcomp
     //D. compcomcoc
     //E. comcomcomcom
+    // when this is run using blueJ, the string comcoc is printed out.
+    // substring is not inclusive of the last letter, so D is incorrect. 
 
     public static void main(String[] args) {
         //mystery("computer", 3); tested this
@@ -60,7 +63,15 @@ public class Unit4MCQ
             total += k - 1;
         }
         System.out.println("E: " + total); 
-
+        
+        String str = "AP-CSA";
+        for (int i = 0; i < str.length(); i++)
+                {   
+                if (str.substring(i, i + 1).equals("A"))
+                    {
+                        System.out.print(i + " ");
+                    }
+                }
         //option E matches the original total when the code is run. The original code is summing all even 
         //integers between 0 and 100, the code in option E performs the addition for all odd integers between 
         //1 and 101, but 1 is subtracted before adding to total, so the same numbers are added to the 
