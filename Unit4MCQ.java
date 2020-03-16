@@ -63,7 +63,10 @@ public class Unit4MCQ
             total += k - 1;
         }
         System.out.println("E: " + total); 
-        
+        //option E matches the original total when the code is run. The original code is summing all even 
+        //integers between 0 and 100, the code in option E performs the addition for all odd integers between 
+        //1 and 101, but 1 is subtracted before adding to total, so the same numbers are added to the 
+        //iteration each time.         
         String str = "AP-CSA";
         for (int i = 0; i < str.length(); i++)
                 {   
@@ -72,9 +75,6 @@ public class Unit4MCQ
                         System.out.print(i + " ");
                     }
                 }
-        //option E matches the original total when the code is run. The original code is summing all even 
-        //integers between 0 and 100, the code in option E performs the addition for all odd integers between 
-        //1 and 101, but 1 is subtracted before adding to total, so the same numbers are added to the 
-        //iteration each time. 
+        //0 5 is printed. There is an A at index 5 so 5 is printed.
     }
 }
